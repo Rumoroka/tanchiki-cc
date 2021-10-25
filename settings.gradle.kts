@@ -9,3 +9,5 @@ pluginManagement {
 }
 
 rootProject.name = "tanchiki-cc"
+
+include("simple-actions")
