@@ -7,8 +7,8 @@ class MovableAdapter(
     private val obj: UObject
 ) : IMovable {
     override var position: Vector
-        get() = obj.getProperty("position")
+        get() = obj.getProperty("position") as Vector
         set(value) = obj.setProperty("position", value)
-    override val velocity: Vector = obj.getProperty("velocity")
+    override val velocity: Vector = obj.getProperty("velocity") as Vector
 }
 

@@ -7,6 +7,6 @@ class RotatableAdapter(
     private val obj: UObject
 ): IRotatable {
     override var direction: Vector
-        get() = obj.getProperty("position")
+        get() = obj.getProperty("position") as Vector
         set(value) = obj.setProperty("position", value)
 }

@@ -1,6 +1,6 @@
 package com.application.models
 
 interface UObject {
-    fun <T> getProperty(key: Any): T
-    fun <T> setProperty(key: Any, value: T)
+    fun getProperty(key: String): Any
+    fun setProperty(key: String, value: Any)
 }
