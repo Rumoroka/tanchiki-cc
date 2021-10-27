@@ -1,15 +1,13 @@
 plugins {
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") apply false
+    id("com.bmuschko.docker-java-application") apply false
 }
 
-group = "com.tanchiki-cc"
-version = "0.1"
+subprojects {
+    group = rootProject.group
+    version = rootProject.version
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation(kotlin("stdlib"))
-
+    repositories {
+        mavenCentral()
+    }
 }
